@@ -29,6 +29,7 @@
 
 - (void)demo{
     [self login];
+    
 }
 
 #pragma mark - Requests
@@ -57,16 +58,12 @@
     [self.manager POST:@"Login" parameters:params success:^(SoapResult *Result) {
         switch (Result.Status) {
             case 200:
-                
                 self.userModel = [UserModel mj_objectWithKeyValues:Result.Data];
                 self.userModel.private = Result.Msg;
-                
                 break;
-                
             default:
                 break;
         }
-        
     } failure:^(NSError *error) {
         
     }];

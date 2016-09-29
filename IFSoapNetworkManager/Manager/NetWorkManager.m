@@ -6,20 +6,31 @@
 //  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
+#import "HTTPConfig.h"
 #import "SoapResult.h"
 #import "NSString+MD5.h"
 #import "NetWorkManager.h"
 #import <MJExtension/MJExtension.h>
 
 @interface NetWorkManager ()
-@property (nonatomic, copy) NSString *privateKey;
 
+@property (nonatomic, copy) NSString *privateKey;
+@property (nonatomic, strong) HTTPConfig *config;
 @end
 
 @implementation NetWorkManager
 
 static NetWorkManager *_instance;
 
+#pragma mark - Lazy
+- (HTTPConfig *)config{
+    if (!_config) {
+        _config = [HTTPConfig sharedHTTPConfig];
+    }
+    return _config;
+}
+
+#pragma mark - Singleton
 + (id)allocWithZone:(struct _NSZone *)zone
 {
     static dispatch_once_t onceToken;
@@ -45,8 +56,11 @@ static NetWorkManager *_instance;
     return _instance;
 }
 
+#pragma mark - Setup
 + (NetWorkManager *)setupManager{
-    NSURL *baseURL = [NSURL URLWithString:@"http://api.cs.bestcake.com/"];
+    
+    HTTPConfig *HTTPLibConfig = [HTTPConfig sharedHTTPConfig];
+    NSURL *baseURL = [NSURL URLWithString:HTTPLibConfig.Lib];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     
@@ -65,8 +79,8 @@ static NetWorkManager *_instance;
     return manager;
 }
 
+#pragma mark - Request
 - (void)POST:(NSString *)methodName parameters:(NSDictionary *)param success:(void (^)(SoapResult *responseObject))success failure:(void(^)(NSError *error))failure {
-    
     //封装json
     NSMutableString *paramsString = [NSMutableString string];
     NSData *jsonData=[NSJSONSerialization dataWithJSONObject:param
@@ -77,7 +91,6 @@ static NetWorkManager *_instance;
     NSString *json = [paramsString stringByReplacingOccurrencesOfString: @"\n" withString:@""];
     NSString *uid = [param objectForKey:@"uid"];
     NSString *sign = [json stringByAppendingString:(uid.length > 0)? self.privateKey:@"12345678"].md5;
-//    NSString *sign = @"30f5c2bd46627f4758f7fb72802bb5b5";
     
     NSString *soapMsg = [NSString stringWithFormat:
                          @"<?xml version=\"1.0\" encoding=\"utf-8\"?>"
@@ -92,7 +105,8 @@ static NetWorkManager *_instance;
                          "</soap:Envelope>",methodName, json, sign, methodName];
     
     [self.requestSerializer setValue:[NSString stringWithFormat:@"%zd", soapMsg.length] forHTTPHeaderField:@"Content-Length"];
-    NSString *page = @"Member";
+    
+    NSString *page = [self.config pageWithMethodName:methodName];
     NSString *URL = [NSString stringWithFormat:@"%@.svc?wsdl", page];
     NSString *ActionTxt = [NSString stringWithFormat:@"http://tempuri.org/I%@/%@",page, methodName];
     
