@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78F3B90E1D9BC6F600603DD9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */; };
+		78F3B9141D9BCC4300603DD9 /* BaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9111D9BCB4400603DD9 /* BaseParam.m */; };
+		78F3B9151D9BCC4800603DD9 /* PrivateParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9131D9BCB4400603DD9 /* PrivateParam.m */; };
+		78F3B91C1D9CAD5800603DD9 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9181D9BCCC600603DD9 /* LoginParam.m */; };
+		78F3B91D1D9CAD5800603DD9 /* LoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B91B1D9BCCC600603DD9 /* LoginResult.m */; };
+		B8586424D8A6998594A0D72F /* libPods-IFSoapNetworkManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BB9E11BA2CF7FC551FB61E /* libPods-IFSoapNetworkManager.a */; };
+		D03BA2921D9912E300F9C46C /* IFDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D03BA2911D9912E300F9C46C /* IFDemo.m */; };
+		D03BA2CA1D9942E200F9C46C /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D03BA2C81D9942C100F9C46C /* NetWorkManager.m */; };
+		D0D35CE41D9911B8008FA2B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D35CE31D9911B8008FA2B9 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0D35CDE1D9911B8008FA2B9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		78F3B90C1D9BC6F600603DD9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		78F3B9101D9BCB4400603DD9 /* BaseParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseParam.h; sourceTree = "<group>"; };
+		78F3B9111D9BCB4400603DD9 /* BaseParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseParam.m; sourceTree = "<group>"; };
+		78F3B9121D9BCB4400603DD9 /* PrivateParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateParam.h; sourceTree = "<group>"; };
+		78F3B9131D9BCB4400603DD9 /* PrivateParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateParam.m; sourceTree = "<group>"; };
+		78F3B9171D9BCCC600603DD9 /* LoginParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginParam.h; sourceTree = "<group>"; };
+		78F3B9181D9BCCC600603DD9 /* LoginParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginParam.m; sourceTree = "<group>"; };
+		78F3B9191D9BCCC600603DD9 /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		78F3B91A1D9BCCC600603DD9 /* LoginResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResult.h; sourceTree = "<group>"; };
+		78F3B91B1D9BCCC600603DD9 /* LoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResult.m; sourceTree = "<group>"; };
+		A6C73452495DCE858A0342CA /* Pods-IFSoapNetworkManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSoapNetworkManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager.release.xcconfig"; sourceTree = "<group>"; };
+		B94A5F002C03652C75455093 /* Pods-IFSoapNetworkManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSoapNetworkManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager.debug.xcconfig"; sourceTree = "<group>"; };
+		D03BA2901D9912E300F9C46C /* IFDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFDemo.h; sourceTree = "<group>"; };
+		D03BA2911D9912E300F9C46C /* IFDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFDemo.m; sourceTree = "<group>"; };
+		D03BA2C71D9942C100F9C46C /* NetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkManager.h; sourceTree = "<group>"; };
+		D03BA2C81D9942C100F9C46C /* NetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetWorkManager.m; sourceTree = "<group>"; };
+		D0D35CE01D9911B8008FA2B9 /* IFSoapNetworkManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IFSoapNetworkManager; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D35CE31D9911B8008FA2B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0BB9E11BA2CF7FC551FB61E /* libPods-IFSoapNetworkManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IFSoapNetworkManager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0D35CDD1D9911B8008FA2B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8586424D8A6998594A0D72F /* libPods-IFSoapNetworkManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174A08A5A52AE66875199C43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0BB9E11BA2CF7FC551FB61E /* libPods-IFSoapNetworkManager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78544BADEC6DA8A6579C1894 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B94A5F002C03652C75455093 /* Pods-IFSoapNetworkManager.debug.xcconfig */,
+				A6C73452495DCE858A0342CA /* Pods-IFSoapNetworkManager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		78F3B90B1D9BC5E100603DD9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				78F3B9161D9BCCC600603DD9 /* Login */,
+				78F3B90F1D9BCB4400603DD9 /* Param */,
+				78F3B90C1D9BC6F600603DD9 /* NSString+MD5.h */,
+				78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		78F3B90F1D9BCB4400603DD9 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				78F3B9101D9BCB4400603DD9 /* BaseParam.h */,
+				78F3B9111D9BCB4400603DD9 /* BaseParam.m */,
+				78F3B9121D9BCB4400603DD9 /* PrivateParam.h */,
+				78F3B9131D9BCB4400603DD9 /* PrivateParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		78F3B9161D9BCCC600603DD9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				78F3B9171D9BCCC600603DD9 /* LoginParam.h */,
+				78F3B9181D9BCCC600603DD9 /* LoginParam.m */,
+				78F3B9191D9BCCC600603DD9 /* LoginRequest.h */,
+				78F3B91A1D9BCCC600603DD9 /* LoginResult.h */,
+				78F3B91B1D9BCCC600603DD9 /* LoginResult.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		D03BA2C41D99408F00F9C46C /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		D03BA2C61D9942C100F9C46C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D03BA2C71D9942C100F9C46C /* NetWorkManager.h */,
+				D03BA2C81D9942C100F9C46C /* NetWorkManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D0D35CD71D9911B8008FA2B9 = {
+			isa = PBXGroup;
+			children = (
+				D0D35CE21D9911B8008FA2B9 /* IFSoapNetworkManager */,
+				D0D35CE11D9911B8008FA2B9 /* Products */,
+				78544BADEC6DA8A6579C1894 /* Pods */,
+				174A08A5A52AE66875199C43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D35CE11D9911B8008FA2B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D35CE01D9911B8008FA2B9 /* IFSoapNetworkManager */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0D35CE21D9911B8008FA2B9 /* IFSoapNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				78F3B90B1D9BC5E100603DD9 /* Common */,
+				D03BA2C61D9942C100F9C46C /* Manager */,
+				D03BA2C41D99408F00F9C46C /* Requests */,
+				D03BA2901D9912E300F9C46C /* IFDemo.h */,
+				D03BA2911D9912E300F9C46C /* IFDemo.m */,
+				D0D35CE31D9911B8008FA2B9 /* main.m */,
+			);
+			path = IFSoapNetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D35CDF1D9911B8008FA2B9 /* IFSoapNetworkManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D35CE71D9911B8008FA2B9 /* Build configuration list for PBXNativeTarget "IFSoapNetworkManager" */;
+			buildPhases = (
+				E4800CE185752AEE0832B9BF /* [CP] Check Pods Manifest.lock */,
+				D0D35CDC1D9911B8008FA2B9 /* Sources */,
+				D0D35CDD1D9911B8008FA2B9 /* Frameworks */,
+				D0D35CDE1D9911B8008FA2B9 /* CopyFiles */,
+				E5CFA82D2634E716A45ADA35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IFSoapNetworkManager;
+			productName = IFSoapNetworkManager;
+			productReference = D0D35CE01D9911B8008FA2B9 /* IFSoapNetworkManager */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D35CD81D9911B8008FA2B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SaiDicaprio;
+				TargetAttributes = {
+					D0D35CDF1D9911B8008FA2B9 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D0D35CDB1D9911B8008FA2B9 /* Build configuration list for PBXProject "IFSoapNetworkManager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D0D35CD71D9911B8008FA2B9;
+			productRefGroup = D0D35CE11D9911B8008FA2B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D35CDF1D9911B8008FA2B9 /* IFSoapNetworkManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4800CE185752AEE0832B9BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CFA82D2634E716A45ADA35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0D35CDC1D9911B8008FA2B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F3B91C1D9CAD5800603DD9 /* LoginParam.m in Sources */,
+				78F3B91D1D9CAD5800603DD9 /* LoginResult.m in Sources */,
+				78F3B9151D9BCC4800603DD9 /* PrivateParam.m in Sources */,
+				78F3B9141D9BCC4300603DD9 /* BaseParam.m in Sources */,
+				D03BA2CA1D9942E200F9C46C /* NetWorkManager.m in Sources */,
+				D03BA2921D9912E300F9C46C /* IFDemo.m in Sources */,
+				78F3B90E1D9BC6F600603DD9 /* NSString+MD5.m in Sources */,
+				D0D35CE41D9911B8008FA2B9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D0D35CE51D9911B8008FA2B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D0D35CE61D9911B8008FA2B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D0D35CE81D9911B8008FA2B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B94A5F002C03652C75455093 /* Pods-IFSoapNetworkManager.debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0D35CE91D9911B8008FA2B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6C73452495DCE858A0342CA /* Pods-IFSoapNetworkManager.release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0D35CDB1D9911B8008FA2B9 /* Build configuration list for PBXProject "IFSoapNetworkManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D35CE51D9911B8008FA2B9 /* Debug */,
+				D0D35CE61D9911B8008FA2B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D35CE71D9911B8008FA2B9 /* Build configuration list for PBXNativeTarget "IFSoapNetworkManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D35CE81D9911B8008FA2B9 /* Debug */,
+				D0D35CE91D9911B8008FA2B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0D35CD81D9911B8008FA2B9 /* Project object */;
+}
