@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		78F3B90E1D9BC6F600603DD9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */; };
-		78F3B9141D9BCC4300603DD9 /* BaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9111D9BCB4400603DD9 /* BaseParam.m */; };
-		78F3B9151D9BCC4800603DD9 /* PrivateParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9131D9BCB4400603DD9 /* PrivateParam.m */; };
-		78F3B91C1D9CAD5800603DD9 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9181D9BCCC600603DD9 /* LoginParam.m */; };
-		78F3B91D1D9CAD5800603DD9 /* LoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B91B1D9BCCC600603DD9 /* LoginResult.m */; };
+		78F3B92C1D9CBBBE00603DD9 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9231D9CBBA800603DD9 /* LoginParam.m */; };
+		78F3B92D1D9CBBBE00603DD9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9261D9CBBA800603DD9 /* UserModel.m */; };
+		78F3B93D1D9CBD3200603DD9 /* BaseParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9371D9CBD2200603DD9 /* BaseParam.m */; };
+		78F3B93E1D9CBD3200603DD9 /* PrivateParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9391D9CBD2200603DD9 /* PrivateParam.m */; };
+		78F3B93F1D9CBD3200603DD9 /* SoapResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B93C1D9CBD2200603DD9 /* SoapResult.m */; };
 		B8586424D8A6998594A0D72F /* libPods-IFSoapNetworkManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BB9E11BA2CF7FC551FB61E /* libPods-IFSoapNetworkManager.a */; };
 		D03BA2921D9912E300F9C46C /* IFDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = D03BA2911D9912E300F9C46C /* IFDemo.m */; };
 		D03BA2CA1D9942E200F9C46C /* NetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D03BA2C81D9942C100F9C46C /* NetWorkManager.m */; };
@@ -33,15 +34,19 @@
 /* Begin PBXFileReference section */
 		78F3B90C1D9BC6F600603DD9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
-		78F3B9101D9BCB4400603DD9 /* BaseParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseParam.h; sourceTree = "<group>"; };
-		78F3B9111D9BCB4400603DD9 /* BaseParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseParam.m; sourceTree = "<group>"; };
-		78F3B9121D9BCB4400603DD9 /* PrivateParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateParam.h; sourceTree = "<group>"; };
-		78F3B9131D9BCB4400603DD9 /* PrivateParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateParam.m; sourceTree = "<group>"; };
-		78F3B9171D9BCCC600603DD9 /* LoginParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginParam.h; sourceTree = "<group>"; };
-		78F3B9181D9BCCC600603DD9 /* LoginParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginParam.m; sourceTree = "<group>"; };
-		78F3B9191D9BCCC600603DD9 /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
-		78F3B91A1D9BCCC600603DD9 /* LoginResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginResult.h; sourceTree = "<group>"; };
-		78F3B91B1D9BCCC600603DD9 /* LoginResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginResult.m; sourceTree = "<group>"; };
+		78F3B91E1D9CB26B00603DD9 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		78F3B9221D9CBBA800603DD9 /* LoginParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginParam.h; sourceTree = "<group>"; };
+		78F3B9231D9CBBA800603DD9 /* LoginParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginParam.m; sourceTree = "<group>"; };
+		78F3B9241D9CBBA800603DD9 /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		78F3B9251D9CBBA800603DD9 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		78F3B9261D9CBBA800603DD9 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		78F3B9361D9CBD2200603DD9 /* BaseParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseParam.h; sourceTree = "<group>"; };
+		78F3B9371D9CBD2200603DD9 /* BaseParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseParam.m; sourceTree = "<group>"; };
+		78F3B9381D9CBD2200603DD9 /* PrivateParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivateParam.h; sourceTree = "<group>"; };
+		78F3B9391D9CBD2200603DD9 /* PrivateParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivateParam.m; sourceTree = "<group>"; };
+		78F3B93A1D9CBD2200603DD9 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		78F3B93B1D9CBD2200603DD9 /* SoapResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoapResult.h; sourceTree = "<group>"; };
+		78F3B93C1D9CBD2200603DD9 /* SoapResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapResult.m; sourceTree = "<group>"; };
 		A6C73452495DCE858A0342CA /* Pods-IFSoapNetworkManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSoapNetworkManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager.release.xcconfig"; sourceTree = "<group>"; };
 		B94A5F002C03652C75455093 /* Pods-IFSoapNetworkManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSoapNetworkManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager.debug.xcconfig"; sourceTree = "<group>"; };
 		D03BA2901D9912E300F9C46C /* IFDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFDemo.h; sourceTree = "<group>"; };
@@ -85,35 +90,47 @@
 		78F3B90B1D9BC5E100603DD9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				78F3B9161D9BCCC600603DD9 /* Login */,
-				78F3B90F1D9BCB4400603DD9 /* Param */,
+				78F3B9201D9CBBA800603DD9 /* Model */,
+				78F3B91E1D9CB26B00603DD9 /* Singleton.h */,
 				78F3B90C1D9BC6F600603DD9 /* NSString+MD5.h */,
 				78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		78F3B90F1D9BCB4400603DD9 /* Param */ = {
+		78F3B9201D9CBBA800603DD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				78F3B9101D9BCB4400603DD9 /* BaseParam.h */,
-				78F3B9111D9BCB4400603DD9 /* BaseParam.m */,
-				78F3B9121D9BCB4400603DD9 /* PrivateParam.h */,
-				78F3B9131D9BCB4400603DD9 /* PrivateParam.m */,
+				78F3B9351D9CBD2200603DD9 /* Request */,
+				78F3B9211D9CBBA800603DD9 /* Login */,
 			);
-			path = Param;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		78F3B9161D9BCCC600603DD9 /* Login */ = {
+		78F3B9211D9CBBA800603DD9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				78F3B9171D9BCCC600603DD9 /* LoginParam.h */,
-				78F3B9181D9BCCC600603DD9 /* LoginParam.m */,
-				78F3B9191D9BCCC600603DD9 /* LoginRequest.h */,
-				78F3B91A1D9BCCC600603DD9 /* LoginResult.h */,
-				78F3B91B1D9BCCC600603DD9 /* LoginResult.m */,
+				78F3B9221D9CBBA800603DD9 /* LoginParam.h */,
+				78F3B9231D9CBBA800603DD9 /* LoginParam.m */,
+				78F3B9241D9CBBA800603DD9 /* LoginRequest.h */,
+				78F3B9251D9CBBA800603DD9 /* UserModel.h */,
+				78F3B9261D9CBBA800603DD9 /* UserModel.m */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		78F3B9351D9CBD2200603DD9 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				78F3B9361D9CBD2200603DD9 /* BaseParam.h */,
+				78F3B9371D9CBD2200603DD9 /* BaseParam.m */,
+				78F3B9381D9CBD2200603DD9 /* PrivateParam.h */,
+				78F3B9391D9CBD2200603DD9 /* PrivateParam.m */,
+				78F3B93A1D9CBD2200603DD9 /* Request.h */,
+				78F3B93B1D9CBD2200603DD9 /* SoapResult.h */,
+				78F3B93C1D9CBD2200603DD9 /* SoapResult.m */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		D03BA2C41D99408F00F9C46C /* Requests */ = {
@@ -254,10 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78F3B91C1D9CAD5800603DD9 /* LoginParam.m in Sources */,
-				78F3B91D1D9CAD5800603DD9 /* LoginResult.m in Sources */,
-				78F3B9151D9BCC4800603DD9 /* PrivateParam.m in Sources */,
-				78F3B9141D9BCC4300603DD9 /* BaseParam.m in Sources */,
+				78F3B93D1D9CBD3200603DD9 /* BaseParam.m in Sources */,
+				78F3B93E1D9CBD3200603DD9 /* PrivateParam.m in Sources */,
+				78F3B93F1D9CBD3200603DD9 /* SoapResult.m in Sources */,
+				78F3B92C1D9CBBBE00603DD9 /* LoginParam.m in Sources */,
+				78F3B92D1D9CBBBE00603DD9 /* UserModel.m in Sources */,
 				D03BA2CA1D9942E200F9C46C /* NetWorkManager.m in Sources */,
 				D03BA2921D9912E300F9C46C /* IFDemo.m in Sources */,
 				78F3B90E1D9BC6F600603DD9 /* NSString+MD5.m in Sources */,

@@ -7,11 +7,12 @@
 //
 
 #import <AFNetworking/AFNetworking.h>
+@class SoapResult;
 
 @interface NetWorkManager : AFHTTPSessionManager
 
 + (instancetype)sharedManager;
 
-- (void)POST:(NSString *)methodName parameters:(NSDictionary *)param success:(void (^)(id responseObject))success failure:(void(^)(NSError *error))failure;
+- (void)POST:(NSString *)methodName parameters:(NSDictionary *)param success:(void (^)(SoapResult *responseResult))success failure:(void(^)(NSError *error))failure;
 
 @end

@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        [[IFDemo new] request];
+        [[IFDemo new] demo];
         CFRunLoopRun();
     }
     return 0;

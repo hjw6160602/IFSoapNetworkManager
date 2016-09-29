@@ -10,6 +10,6 @@
 
 @interface IFDemo : NSObject
 
-- (void)request;
+- (void)demo;
 
 @end

@@ -6,8 +6,10 @@
 //  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 
-#import "NetWorkManager.h"
+#import "SoapResult.h"
 #import "NSString+MD5.h"
+#import "NetWorkManager.h"
+#import <MJExtension/MJExtension.h>
 
 @interface NetWorkManager ()
 @property (nonatomic, copy) NSString *privateKey;
@@ -63,7 +65,7 @@ static NetWorkManager *_instance;
     return manager;
 }
 
-- (void)POST:(NSString *)methodName parameters:(NSDictionary *)param success:(void (^)(id responseObject))success failure:(void(^)(NSError *error))failure {
+- (void)POST:(NSString *)methodName parameters:(NSDictionary *)param success:(void (^)(SoapResult *responseObject))success failure:(void(^)(NSError *error))failure {
     
     //封装json
     NSMutableString *paramsString = [NSMutableString string];
@@ -90,7 +92,7 @@ static NetWorkManager *_instance;
                          "</soap:Envelope>",methodName, json, sign, methodName];
     
     [self.requestSerializer setValue:[NSString stringWithFormat:@"%zd", soapMsg.length] forHTTPHeaderField:@"Content-Length"];
-    NSString *page = @"Activities";
+    NSString *page = @"Member";
     NSString *URL = [NSString stringWithFormat:@"%@.svc?wsdl", page];
     NSString *ActionTxt = [NSString stringWithFormat:@"http://tempuri.org/I%@/%@",page, methodName];
     
@@ -120,9 +122,11 @@ static NetWorkManager *_instance;
             // 得到字典
             dict = [NSJSONSerialization JSONObjectWithData:[[result substringWithRange:checkingResult.range] dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:nil];
         }
+        
         // 请求成功并且结果有值把结果传出去
         if (success && dict) {
-            success(dict);
+            SoapResult *Result = [SoapResult mj_objectWithKeyValues:dict];
+            success(Result);
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

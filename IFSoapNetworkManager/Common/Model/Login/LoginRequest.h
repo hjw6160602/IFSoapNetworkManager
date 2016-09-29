@@ -9,6 +9,7 @@
 #ifndef LoginRequest_h
 #define LoginRequest_h
 
+#import "Request.h"
 #import "LoginParam.h"
 #import "UserModel.h"
 
