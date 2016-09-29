@@ -2,8 +2,8 @@
 //  SoapResult.h
 //  BestCake3.0
 //
-//  Created by shoule on 15/8/18.
-//  Copyright © 2015年 shoule. All rights reserved.
+//  Created by SaiDicaprio on 15/8/18.
+//  Copyright © 2015年 SaiDicaprio. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

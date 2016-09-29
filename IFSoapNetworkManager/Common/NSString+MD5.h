@@ -2,7 +2,7 @@
 //  NSString+MD5.h
 //  IFSoapNetworkManager
 //
-//  Created by shoule on 16/9/28.
+//  Created by SaiDicaprio on 16/9/28.
 //  Copyright © 2016年 SaiDicaprio. All rights reserved.
 //
 

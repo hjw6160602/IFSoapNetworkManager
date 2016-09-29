@@ -47,6 +47,7 @@
 		78F3B93A1D9CBD2200603DD9 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		78F3B93B1D9CBD2200603DD9 /* SoapResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoapResult.h; sourceTree = "<group>"; };
 		78F3B93C1D9CBD2200603DD9 /* SoapResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoapResult.m; sourceTree = "<group>"; };
+		78F3B9401D9CBF4B00603DD9 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A6C73452495DCE858A0342CA /* Pods-IFSoapNetworkManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSoapNetworkManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager.release.xcconfig"; sourceTree = "<group>"; };
 		B94A5F002C03652C75455093 /* Pods-IFSoapNetworkManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFSoapNetworkManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IFSoapNetworkManager/Pods-IFSoapNetworkManager.debug.xcconfig"; sourceTree = "<group>"; };
 		D03BA2901D9912E300F9C46C /* IFDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFDemo.h; sourceTree = "<group>"; };
@@ -122,13 +123,14 @@
 		78F3B9351D9CBD2200603DD9 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				78F3B93A1D9CBD2200603DD9 /* Request.h */,
 				78F3B9361D9CBD2200603DD9 /* BaseParam.h */,
 				78F3B9371D9CBD2200603DD9 /* BaseParam.m */,
 				78F3B9381D9CBD2200603DD9 /* PrivateParam.h */,
 				78F3B9391D9CBD2200603DD9 /* PrivateParam.m */,
-				78F3B93A1D9CBD2200603DD9 /* Request.h */,
 				78F3B93B1D9CBD2200603DD9 /* SoapResult.h */,
 				78F3B93C1D9CBD2200603DD9 /* SoapResult.m */,
+				78F3B9401D9CBF4B00603DD9 /* config.h */,
 			);
 			path = Request;
 			sourceTree = "<group>";
