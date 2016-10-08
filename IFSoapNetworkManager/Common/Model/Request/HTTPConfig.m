@@ -36,11 +36,11 @@ static NSString * const ShoppingCartPage = @"ShoppingCart";
 
 - (NSString *)Lib{
 //    NSString *ProductLib    = [NSString stringWithFormat:@"%@api.%@", HTTPHeader ,BestCakeDomain];
-    NSString *SimProductLib = [NSString stringWithFormat:@"%@api.test.%@", HTTPHeader ,BestCakeDomain];
+//    NSString *SimProductLib = [NSString stringWithFormat:@"%@api.test.%@", HTTPHeader ,BestCakeDomain];
 //    NSString *TestLib       = [NSString stringWithFormat:@"%@api.cs.%@", HTTPHeader ,BestCakeDomain];
-//    NSString *DevelopLib    = [NSString stringWithFormat:@"%@testapp.%@:9102", HTTPHeader ,BestCakeDomain];
+    NSString *DevelopLib    = [NSString stringWithFormat:@"%@testapp.%@:9102", HTTPHeader ,BestCakeDomain];
 
-    return SimProductLib;
+    return DevelopLib;
 }
 
 - (NSString *)ImgURL{
@@ -48,10 +48,13 @@ static NSString * const ShoppingCartPage = @"ShoppingCart";
 }
 
 - (NSDictionary *)URLActionMap{
-    return @{@"Login"  : MemberPage,
-             @"QdData" : ActivityPage
-             
+    
+    return @{@"Login"            : MemberPage,
+             @"AddMember"        : MemberPage,
+             @"QdData"           : ActivityPage,
+             @"SendIdentityCode" : MessagePage
             };
+    
 }
 
 - (NSString *)pageWithMethodName:(NSString *)methodName{

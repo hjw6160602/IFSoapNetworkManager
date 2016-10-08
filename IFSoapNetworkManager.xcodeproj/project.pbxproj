@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78C2D8E01DA8E64800159FFA /* RegisterParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2D8DF1DA8E64800159FFA /* RegisterParam.m */; };
 		78F3B90E1D9BC6F600603DD9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */; };
 		78F3B92C1D9CBBBE00603DD9 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9231D9CBBA800603DD9 /* LoginParam.m */; };
 		78F3B92D1D9CBBBE00603DD9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9261D9CBBA800603DD9 /* UserModel.m */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		78C2D8DE1DA8E64800159FFA /* RegisterParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterParam.h; sourceTree = "<group>"; };
+		78C2D8DF1DA8E64800159FFA /* RegisterParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterParam.m; sourceTree = "<group>"; };
 		78F3B90C1D9BC6F600603DD9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		78F3B91E1D9CB26B00603DD9 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -92,6 +95,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		78C2D8DD1DA8E63600159FFA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				78C2D8DE1DA8E64800159FFA /* RegisterParam.h */,
+				78C2D8DF1DA8E64800159FFA /* RegisterParam.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		78F3B90B1D9BC5E100603DD9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,7 @@
 		78F3B9201D9CBBA800603DD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78C2D8DD1DA8E63600159FFA /* Register */,
 				78F3B9351D9CBD2200603DD9 /* Request */,
 				78F3B9211D9CBBA800603DD9 /* Login */,
 			);
@@ -283,6 +296,7 @@
 				78F3B93E1D9CBD3200603DD9 /* PrivateParam.m in Sources */,
 				78F3B93F1D9CBD3200603DD9 /* SoapResult.m in Sources */,
 				78F3B92C1D9CBBBE00603DD9 /* LoginParam.m in Sources */,
+				78C2D8E01DA8E64800159FFA /* RegisterParam.m in Sources */,
 				78F3B92D1D9CBBBE00603DD9 /* UserModel.m in Sources */,
 				D03BA2CA1D9942E200F9C46C /* NetWorkManager.m in Sources */,
 				D03BA2921D9912E300F9C46C /* IFDemo.m in Sources */,

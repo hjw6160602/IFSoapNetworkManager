@@ -8,8 +8,10 @@
 
 #import "IFDemo.h"
 #import "LoginRequest.h"
+#import "RegisterParam.h"
 #import "NetWorkManager.h"
 #import <MJExtension/MJExtension.h>
+#import "NSString+MD5.h"
 
 
 @interface IFDemo ()
@@ -28,20 +30,51 @@
 }
 
 - (void)demo{
-    [self login];
+    [self reg];
     
 }
 
 #pragma mark - Requests
 - (void)request{
-    NSDictionary *param = @{@"machinedesc"   : @"iPhone Simulator-9.3",
-                            @"timestamp"     : @"2016-09-26 11:55:10",
-                            @"Edition"       : @"201609000",
-                            @"versionnum"    : @"3.1.20",
-                            @"platformtype"  : @"ios",
-                            };
-    [self.manager POST:@"QdData" parameters:param success:^(id responseObject) {
+    BaseParam *Param = [BaseParam param];
+    NSMutableDictionary *params = Param.mj_keyValues;
+    [params setObject:@"201609000" forKey:@"Edition"];
+    [self.manager POST:@"QdData" parameters:params success:^(id responseObject) {
+        NSLog(@"responseObject...");
+    } failure:^(NSError *error) {
+        NSLog(@"failure:\n %@", error);
+    }];
+}
+
+- (void)reg{
+    RegisterParam *Param = [RegisterParam param];
+    Param.phone = @"13967173625";
+    Param.code = @"749216";
+    Param.pwd = @"123456".md5;
+    
+    NSMutableDictionary *params = Param.mj_keyValues;
+
+    [self.manager POST:@"AddMember" parameters:params success:^(SoapResult *Result) {
+        switch (Result.Status) {
+            case 200:
+                self.userModel = [UserModel mj_objectWithKeyValues:Result.Data];
+                self.userModel.private = Result.Msg;
+                break;
+            default:
+                break;
+        }
+    } failure:^(NSError *error) {
         
+    }];
+}
+
+- (void)verifyCode{
+    BaseParam *Param = [BaseParam param];
+    NSMutableDictionary *params = Param.mj_keyValues;
+    [params setObject:@"13967173625" forKey:@"phone"];
+    [params setObject:@"验证" forKey:@"operate"];
+    [params setObject:@"上海" forKey:@"City"];
+    [self.manager POST:@"SendIdentityCode" parameters:params success:^(id responseObject) {
         NSLog(@"responseObject...");
     } failure:^(NSError *error) {
         NSLog(@"failure:\n %@", error);
