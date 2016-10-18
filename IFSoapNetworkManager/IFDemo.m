@@ -7,6 +7,7 @@
 //
 
 #import "IFDemo.h"
+#import "PrivateParam.h"
 #import "LoginRequest.h"
 #import "RegisterParam.h"
 #import "NetWorkManager.h"
@@ -27,19 +28,6 @@
         _manager = [NetWorkManager sharedManager];
     }
     return _manager;
-}
-
-- (void)demo{
-    [self reg];
-
-//    "couponsmodel": {
-//        "Price": "50",
-//        "Text1": "新用户专享优惠券",
-//        "Text2": "2016.10.08至2016.11.10有效","Text3": "限经典系列使用",
-//        "supplyNo": "KSK-0001-1",
-//        "orderSourse": "index|app"
-//    }
-    
 }
 
 #pragma mark - Requests
@@ -107,6 +95,27 @@
     } failure:^(NSError *error) {
         
     }];
+}
+
+- (void)homeModuleList{
+    PrivateParam *Param = [PrivateParam param];
+    Param.City = @"上海";
+    NSDictionary *params = Param.mj_keyValues;
+    [self.manager POST:@"NewGetHomePageModuleList" parameters:params success:^(SoapResult *Result) {
+        switch (Result.Status) {
+                
+            case 200:
+                break;
+            default:
+                break;
+        }
+    } failure:^(NSError *error) {
+        
+    }];
+}
+
+- (void)demo{
+    [self homeModuleList];
 }
 
 @end
