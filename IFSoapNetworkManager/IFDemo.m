@@ -88,6 +88,7 @@
             case 200:
                 self.userModel = [UserModel mj_objectWithKeyValues:Result.Data];
                 self.userModel.private = Result.Msg;
+                [self tasks];
                 break;
             default:
                 break;
@@ -97,25 +98,22 @@
     }];
 }
 
-- (void)homeModuleList{
+- (void)tasks{
     PrivateParam *Param = [PrivateParam param];
-    Param.City = @"上海";
-    NSDictionary *params = Param.mj_keyValues;
-    [self.manager POST:@"NewGetHomePageModuleList" parameters:params success:^(SoapResult *Result) {
+    NSMutableDictionary *params = Param.mj_keyValues;
+
+     [self.manager POST:@"GetTaskList" parameters:params success:^(SoapResult *Result) {
         switch (Result.Status) {
                 
-            case 200:
-                break;
-            default:
-                break;
         }
     } failure:^(NSError *error) {
-        
     }];
 }
 
+
+
 - (void)demo{
-    [self homeModuleList];
+    [self login];
 }
 
 @end

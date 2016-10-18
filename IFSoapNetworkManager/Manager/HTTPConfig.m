@@ -52,7 +52,8 @@ static NSString * const ShoppingCartPage    = @"ShoppingCart";
              @"AddMember"                : MemberPage,
              @"QdData"                   : ActivityPage,
              @"SendIdentityCode"         : MessagePage,
-             @"NewGetHomePageModuleList" : AdvertisingPag
+             @"NewGetHomePageModuleList" : AdvertisingPag,
+             @"GetTaskList"              : TaskPage
              };
 }
 

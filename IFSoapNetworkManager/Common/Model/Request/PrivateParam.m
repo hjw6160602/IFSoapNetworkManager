@@ -16,8 +16,8 @@
 - (id)init
 {
     if (self = [super init]) {
-//        self.uid = [Utils userModel].Id;//[NSString stringWithFormat:@"%@",[Utils userModel];
-//        self.City = [Utils readCity];
+        self.uid = [UserModel sharedUserModel].Id;//[NSString stringWithFormat:@"%@",[Utils userModel];
+        self.City = @"上海";
     }
     return self;
 }
