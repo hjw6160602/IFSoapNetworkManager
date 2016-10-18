@@ -31,6 +31,14 @@
 
 - (void)demo{
     [self reg];
+
+//    "couponsmodel": {
+//        "Price": "50",
+//        "Text1": "新用户专享优惠券",
+//        "Text2": "2016.10.08至2016.11.10有效","Text3": "限经典系列使用",
+//        "supplyNo": "KSK-0001-1",
+//        "orderSourse": "index|app"
+//    }
     
 }
 
@@ -51,14 +59,13 @@
     Param.phone = @"13967173625";
     Param.code = @"749216";
     Param.pwd = @"123456".md5;
-    
     NSMutableDictionary *params = Param.mj_keyValues;
-
     [self.manager POST:@"AddMember" parameters:params success:^(SoapResult *Result) {
         switch (Result.Status) {
             case 200:
                 self.userModel = [UserModel mj_objectWithKeyValues:Result.Data];
                 self.userModel.private = Result.Msg;
+                
                 break;
             default:
                 break;

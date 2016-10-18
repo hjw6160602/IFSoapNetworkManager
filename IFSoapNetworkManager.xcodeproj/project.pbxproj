@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78C2D8E01DA8E64800159FFA /* RegisterParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2D8DF1DA8E64800159FFA /* RegisterParam.m */; };
+		78C2D8E31DA9224700159FFA /* RegisterResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C2D8E21DA9224700159FFA /* RegisterResult.m */; };
 		78F3B90E1D9BC6F600603DD9 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */; };
 		78F3B92C1D9CBBBE00603DD9 /* LoginParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9231D9CBBA800603DD9 /* LoginParam.m */; };
 		78F3B92D1D9CBBBE00603DD9 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F3B9261D9CBBA800603DD9 /* UserModel.m */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		78C2D8DE1DA8E64800159FFA /* RegisterParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterParam.h; sourceTree = "<group>"; };
 		78C2D8DF1DA8E64800159FFA /* RegisterParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterParam.m; sourceTree = "<group>"; };
+		78C2D8E11DA9224700159FFA /* RegisterResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterResult.h; sourceTree = "<group>"; };
+		78C2D8E21DA9224700159FFA /* RegisterResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterResult.m; sourceTree = "<group>"; };
 		78F3B90C1D9BC6F600603DD9 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		78F3B90D1D9BC6F600603DD9 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		78F3B91E1D9CB26B00603DD9 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 			children = (
 				78C2D8DE1DA8E64800159FFA /* RegisterParam.h */,
 				78C2D8DF1DA8E64800159FFA /* RegisterParam.m */,
+				78C2D8E11DA9224700159FFA /* RegisterResult.h */,
+				78C2D8E21DA9224700159FFA /* RegisterResult.m */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				D0D35CE41D9911B8008FA2B9 /* main.m in Sources */,
 				78F3B9451D9CDEFB00603DD9 /* HTTPConfig.m in Sources */,
 				78F3B9421D9CDAAA00603DD9 /* HTTPConf1g.m in Sources */,
+				78C2D8E31DA9224700159FFA /* RegisterResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

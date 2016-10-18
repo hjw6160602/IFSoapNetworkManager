@@ -11,6 +11,7 @@
 #import "NSString+MD5.h"
 #import "NetWorkManager.h"
 #import <MJExtension/MJExtension.h>
+#import "UserModel.h"
 
 @interface NetWorkManager ()
 
@@ -21,6 +22,15 @@
 @implementation NetWorkManager
 
 static NetWorkManager *_instance;
+
+- (NSString *)privateKey{
+    if (!_privateKey) {
+        UserModel *userModel = [UserModel sharedUserModel];
+        _privateKey = userModel.private;
+    }
+    return _privateKey;
+    
+}
 
 #pragma mark - Lazy
 - (HTTPConfig *)config{
@@ -75,7 +85,7 @@ static NetWorkManager *_instance;
     
     // 设置请求头，也可以不设置
     [manager.requestSerializer setValue:@"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-
+    
     return manager;
 }
 
@@ -90,6 +100,7 @@ static NetWorkManager *_instance;
     
     NSString *json = [paramsString stringByReplacingOccurrencesOfString: @"\n" withString:@""];
     NSString *uid = [param objectForKey:@"uid"];
+    
     NSString *sign = [json stringByAppendingString:(uid.length > 0)? self.privateKey:@"12345678"].md5;
     
     NSString *soapMsg = [NSString stringWithFormat:
