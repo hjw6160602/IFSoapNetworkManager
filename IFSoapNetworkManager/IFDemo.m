@@ -88,7 +88,7 @@
             case 200:
                 self.userModel = [UserModel mj_objectWithKeyValues:Result.Data];
                 self.userModel.private = Result.Msg;
-                [self tasks];
+                //[self tasks];
                 break;
             default:
                 break;
@@ -113,6 +113,9 @@
 
 
 - (void)demo{
+    [self login];
+    [self login];
+    [self login];
     [self login];
 }
 

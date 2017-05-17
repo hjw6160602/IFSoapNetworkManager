@@ -130,7 +130,7 @@ static NetWorkManager *_instance;
     }];
     
     [self POST:URL parameters:soapMsg progress:^(NSProgress * _Nonnull uploadProgress) {
-        NSLog(@"请求中...");
+        NSLog(@"%@请求中...",methodName);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         // 把返回的二进制数据转为字符串
         NSString *result = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
